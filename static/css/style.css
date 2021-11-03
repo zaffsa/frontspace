@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* BARRA LATERAL */
+body::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;    /* color of the scroll thumb */
+    border-radius: 1px;       /* roundness of the scroll thumb */
+    border: 3px solid black;  /* creates padding around scroll thumb */
+  }
+  body{
+      margin:0;
+      
+  }
+
+  /* FIM DA BARRA LATERAL */
+body, ul{
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+    
+}
+.container-fluid{
+    width:100vw;
+background-color: #100120;
+}
+.menu-top a {
+    color:#C863FC ; 
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.menu-top a:hover{
+
+    color:#F7C915;
+}
+.logo{
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top:24px;
+   animation: voando 4s ;
+}
+@keyframes voando {
+    0%{
+transform: translateY(900px)  scale(3);
+    }
+
+}
+
+#header{
+    box-sizing: border-box;
+    height:70px;
+    padding:1rem;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.menu-top{
+    display: flex;
+list-style: none;
+gap: .7rem;
+text-decoration: none;
+}
+.menu-top a{
+    display:block;
+    padding: .3rem;
+}
+
+#btn-mobile-btn{
+    display:none;
+  
+   }
+   .menu-top li  ul{
+    position:absolute;
+    top:50px;
+    left:15;
+
+    display:none;
+    }
+   .menu-top li:hover ul, .menu-top li.over ul{display:block;}
+   .menu-top li ul li{
+
+    display:block;
+    width:30px;
+    }
+   /*ENCERRA MENU */
+
+/*sobre*/
+.teste3{
+    border-bottom:3px solid #C863FC;
+    height:31.6em;  
+}
+.sobre{
+    height: 65em;
+    padding-top:15rem;
+   
+    justify-content: space-between;
+
+}
+
+.sobre .saiba-mais{
+    margin-top:14rem;
+
+    }
+.typing{
+        border-right:10px solid rgba(255, 255, 255, 0.74);
+        width:0;
+        white-space: nowrap;
+        overflow:hidden;
+        height:14px;
+      
+        animation: typing-cursor 500ms infinite , space-dat 4s steps(200) 1s normal both;
+    
+}
+
+    .titulo-sobre h6{
+        color:#F7C915;
+        z-index:1000;
+        font-family: 'Special Elite', cursive;
+      
+}
+    .titulo-sobre h1{
+        color:#C863FC;
+        z-index: 1000;
+        
+        text-align: left;
+
+      
+    }
+
+    .mensagem {
+    color:rgb(155, 155, 155);
+    text-align: justify;
+    }
+   
+    .saiba-mais a  {
+        
+        border-radius: 10%;
+          color:#100120;
+          font-weight:bold;
+          background:#F7C915;
+          border:1px solid #C863FC;
+          padding:10px;
+          text-decoration: none;
+         
+          
+      }
+      .saiba-mais a:hover{
+          background:#8832AD;
+          color:#F7C915;
+        }
+      
+          @keyframes space-dat{
+     /*      from{
+              width:0;
+          } */
+              to{
+                  width:15.2em;
+              }
+        
+            }
+            @keyframes typing-cursor {
+                from{
+                    border-right:10px solid rgba(255, 255, 255, 0.74);
+                }
+                to{
+                    border-right:transparent;
+                }
+            } 
+
+
+/*encerra sobre
+transition: 1s;
+*/
+
+/*COMEÇA PRODUTOS*/
+.produtos{
+     border-top:3px solid #390075;
+height: 10em;
+padding-top:3rem;
+  
+
+}
+
+.produtos{
+    text-align: center;
+}
+.produtos h1{
+    color:orange;
+    height:40px;
+    font-size:25px;
+    white-space: nowrap;
+    overflow:hidden;
+    margin:0 auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.produtos .row{
+    justify-content: space-between;
+    margin-top:15px;
+    text-align: center;
+    
+   
+    margin:3rem;
+}
+/*VISIBLE*/
+
+#token.active-hidden {
+    visibility: hidden;
+}
+#gamedev.active-hidden {
+    visibility: hidden;
+    
+}
+#blockchain.active-hidden{
+    visibility: hidden;
+}
+/*fim de visible*/
+
+.token-front{
+       border-radius: 10px 0px 10px 0px;   
+}
+
+.token-front .-a{
+    background: none;
+    text-align: left;
+   
+}
+.token-front h3{
+    color:#C863FC;
+}
+.token-front h5 {
+    color:#C863FC;
+}
+.token-front img{
+    width:450px;
+}
+.color-letras{
+    color:orange;
+}
+.blockchain{
+    width:70em;
+    position:absolute; 
+
+}  
+.gamedev{ 
+    width:70em;
+    position:absolute; 
+
+     }
+
+
+.token{ 
+    width:70em;
+    position:absolute; 
+      
+   }
+
+.link-produto{
+    margin:20px;
+}
+.produtos .link-produto a{
+    color:#100120;
+    background:#F7C915;
+    text-decoration: none;
+    width:100px;
+    padding:10px;
+    font-weight: bold;
+   
+    
+   
+    
+}
+.produtos-btn{
+    color:purple;
+    transform: rotateX(0deg);
+    font-size:10px;
+    animation: btn_produtos 1s  0s normal both;
+    font-size:15px;
+
+    
+    
+    
+    }
+  @keyframes btn_produtos {
+ from{
+    background:rgba(255, 166, 0, 0);
+
+ }
+    to {
+        transform: rotateX(360deg);
+        font-size:25px;
+        border-radius:5px;
+        background:rgb(255, 184, 51);
+    }
+
+}
+.produtos-texto h3{
+text-align: left;
+}
+.produtos-texto h6{
+text-align:justify; 
+    color:#9B9B9B;
+
+}
+.produtos-texto h5{
+    text-align:left;
+}
+.produtos-texto img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fechar-produto{
+    visibility: hidden;
+}
+/*FIM PRODUTOS*/
+ 
+/*projetos sociais*/
+
+.projeto-social{
+  border-top:1px solid #390075;
+height:25em;
+margin-top:27em;
+margin-bottom:50px;
+color:#F7C915;
+
+
+}
+.height-p{
+    height:50em;
+}
+
+
+@keyframes borda{
+    to{
+        opacity:1
+    }
+}
+.projeto-social .row {
+justify-content: space-between;
+text-align: center;
+padding:3rem;
+}
+.projeto-social a{
+    color:#F7C915;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius:10px 0px 10px 0px;
+    background:#390075;
+    padding:5px;
+}
+/*FIM PROJETOS SOCIAIS*/
+/* call pro cadastro*/
+.chamada-cadastro {
+    height:50vh;
+    border-top:1px solid #390075;
+    text-align: center;
+    padding:3rem;
+}
+.chamada-cadastro h2{
+    
+color:orange;
+}
+.chamada-cadastro span{
+    font-size:25px;
+    font-weight: 400;
+    color:#9B9B9B;
+}
+.chamada-cadastro a{
+    color:black;
+    border-radius:10px 0px 10px 0px;
+    text-decoration: none;
+    font-size:20px;
+    padding:5px;
+    background-color: orange;
+}
+.chamada-cadastro .row .col-12{
+    margin-bottom: 3rem;
+}
+/*fim call*/
+/* taxas*/
+.taxas {
+    border-top:1px solid #390075;
+    height:50vh;
+}
+.taxas .row  {
+    padding-top:3rem;
+}
+.taxas .taxasmenu {
+    margin-bottom:50px;
+}
+.taxas .row .col-6 .col-12 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding:5px;
+    font-weight: 500;
+    background:rgb(255, 255, 255);
+    border:1px solid black;
+    border-radius: 0px 10px 10px 0px;
+}
+.taxas .row .col-12 h2{
+    font-size:35px;
+    color:orange;
+    text-align: center;
+}
+.taxas .-taxas {
+  
+   
+    width:70%;
+    
+ 
+}
+
+/*fim taxa*/
+/*rodape*/
+.rodape{
+    border-top:1px solid #390075;
+    padding:1rem;
+    height:30vh;
+    text-align: center
+
+}
+
+.rodape .row a{
+    text-decoration: none;
+    color:orange;
+}
+.rodape .row a:hover{
+    color:rgb(221, 167, 65)
+}
+.rodape .row span{
+    font-weight: bold;
+    color:rgb(212, 5, 212);
+}
+.rodape .row .col-3 .row .col-12 span{
+    color:rgb(255, 255, 255);
+}
+/*fim rodape*/
+/**/
+
+/**/
+@media (max-width:768px){
+       
+               .menu-top{ 
+                  /*  display:none;*/
+                  display: block;
+                    position: absolute;
+                    width:100%;
+                    top:70px;
+                    right:0px;
+                    height:0px;
+                    transition:.6s;
+                    background:#343a40;
+                    visibility: hidden;
+                    overflow-y: hidden;
+               z-index:1000px;
+                    }
+                    .menu-top a{
+                        margin:0 1rem;
+                        padding:.5rem;
+                    }
+        #nav.active .menu-top{
+            height:calc(100vh - 70px);
+            visibility: visible;
+            overflow-y: auto;
+         
+        
+        }
+        #btn-mobile-btn{
+            display:flex;
+          padding: .5rem 1rem;
+          font-size:1rem;
+          border:none;
+          color:white;
+          background:none;
+          cursor :pointer;
+           }
+           .hamburguer {
+               border-top:2px solid;
+               width:20px;
+           }
+           .hamburguer::after, .hamburguer::before{
+            content:'';
+            display:block;
+            width:20px;
+            height:2px;
+            background:white;
+            margin-top:5px;
+            position: relative;
+           }
+           #nav.active .hamburguer{
+            border-top-color: transparent;
+
+           }
+           #nav.active .hamburguer::before{
+            transform: rotate(135deg);
+
+           }
+           #nav.active .hamburguer::after{
+            transform: rotate(-135deg);
+            top:-7px;
+
+           }
+           .menu-top li  ul{
+            position:absolute;
+            top:400px;
+            left:15;
+        
+            display:none;
+            }
+           .menu-top li:hover ul, .menu-top li.over ul{display:block;}
+           .menu-top li ul li{
+        
+            display:block;
+            width:70px;
+            }
+           /*MENU  ENCERRA AQUI*/
+    /*SOBRE*/
+
+           .sobre{
+            height: 100%;
+            
+            padding-top:3rem;
+            justify-content: space-between;
+        }
+     
+            .titulo-sobre h6{
+                color:rgb(212, 27, 212);
+            }
+            .titulo-sobre h1{
+                color:orange;
+                text-align: left;
+                
+            }
+        
+            .mensagem{
+        
+            color:white;
+            width:100%;
+            text-align: justify;
+            }
+            .saiba-mais{
+        
+            padding-top:10px;
+            
+            }
+            .sobre .saiba-mais{
+                margin-top:4rem;
+            margin-bottom: 3rem;;
+                }
+            .saiba-mais a  {
+        
+            border-radius: 10%;
+            
+            
+            padding:10px;
+            text-decoration: none;
+         
+                  
+              }
+            .saiba-mais a:hover{
+             background:white;
+             color:black;}
+         
+             .hidden-class{
+                 visibility: visible;
+             }
+             
+
+/*PRODUTOS*/
+.produtos{
+    
+  height: 10em;
+  margin: 0px;
+  /*  word-wrap: break-word;  */
+  }
+  .produtos .row{
+      justify-content: space-between;
+      margin-top:30px;
+      text-align:justify;     
+      margin:1rem;
+      
+  }
+  .link-produto{
+      padding:0px;
+      
+      
+  }
+  .produtos .link-produto a{
+      color:rgb(255, 255, 255);
+      text-decoration: none;
+      background:orange;
+      font-size:15px;
+     
+      border-radius:10px;
+      font-weight: bold;
+      
+      
+      
+  }
+  /*VISIBLE*/
+  
+  #token.active-hidden {
+      visibility: hidden;
+      
+  }
+  #gamedev.active-hidden {
+      visibility: hidden;
+  }
+  #blockchain.active-hidden{
+      visibility: hidden;
+  }
+  /*fim de visible*/
+  
+  .token-front{
+  
+      border-radius: 10px 0px 10px 0px;
+  
+      
+  }
+  
+  .token-front .-a{
+      background: none;
+      text-align: left;
+     
+  }
+  .token-front h3{
+      color:purple;
+  }
+  .token-front h5 {
+      color:purple;
+  }
+  .produtos  img{
+      width:250px;
+  }
+      .color-letras{
+          color:orange;
+      }
+      .blockchain{
+        position:fixed;
+        left:0px;
+        top:30px;
+        
+        border: 1px solid orange;
+        padding-top:30px;
+        width:100%;
+        color:rgb(255, 255, 255);
+        height:100vh;
+        
+        background-color: rgba(0, 0, 0, 0.897);
+       
+        
+       
+       }  
+       .gamedev{
+        position:fixed;
+        left:0px;
+        top:30px;
+        
+        border: 1px solid orange;
+        padding-top:30px;
+        width:100%;
+        color:rgb(255, 255, 255);
+        height:100vh;
+        
+        background-color: rgba(0, 0, 0, 0.897);
+       
+        
+         
+       }
+     
+     .token{
+        position:fixed;
+        left:0px;
+        top:30px;
+     
+        border: 1px solid orange;
+        padding-top:30px;
+        width:100%;
+        color:rgb(255, 255, 255);
+        height:100vh;
+        
+        background-color: rgba(0, 0, 0, 0.897);
+        animation: go-back .6 normal both;
+    }
+    @keyframes go-back{
+     from{
+         opacity:0;
+     }
+    to{
+        opacity: 1;
+    }
+}
+
+    .fechar-produto{
+        visibility:inherit;
+    }
+     .fechar {
+        
+         color:purple;
+         font-size:25px;
+         text-decoration:none;
+     }
+     .fechar2 {
+     
+        color:purple;
+        font-size:25px;
+        text-decoration:none;
+    }
+    .fechar3 {
+        
+    
+        color:purple;
+        font-size:25px;
+        text-decoration:none;
+    }
+
+    /*social*/
+     .projeto-social{
+        height:60em;
+        background:white;
+        }
+        .projeto-social img{
+            width:100px;
+        }
+        .projeto-social .row {
+        justify-content: space-between;
+        text-align: center;
+        padding:1rem;
+        }
+        .projeto-social .row .col-3 .col-12 a{
+            color:white;
+            text-decoration: none;
+            font-weight: 400;
+            border-radius:10px 0px 10px 0px;
+            background:black;
+            padding:5px;
+        }
+
+        /*CHAMADA CADASTRO*/
+        .chamada-cadastro {
+            height:70%;
+           
+            text-align: center;
+            padding:1rem;
+        }
+        .chamada-cadastro h2{
+            color:orange;
+        }
+        .chamada-cadastro span{
+            font-size:15px;
+            font-weight: 400;
+            
+            color:purple;
+        }
+        .chamada-cadastro a{
+            color:black;
+            border-radius:10px 0px 10px 0px;
+            text-decoration: none;
+            font-size:20px;
+            padding:5px;
+            background-color: orange;
+        }
+        .chamada-cadastro .row .col-12{
+            margin-bottom: 3rem;
+        }
+
+/*fim call*/
+/* taxas*/
+.taxas {
+    height:50%;
+}
+.taxas .row  {
+    padding-top:3rem;
+}
+.taxas .taxasmenu {
+    margin-bottom:25px;
+}
+.taxas .row .col-6 .col-12 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding:5px;
+    font-weight: 500;
+    background:rgb(255, 255, 255);
+    border:1px solid black;
+    border-radius: 0px 10px 10px 0px;
+}
+.taxas .row .col-12 h2{
+    font-size:35px;
+    color:orange;
+    text-align: center;
+}
+.taxas .-taxas {
+  
+   
+    width:70%;
+    
+ 
+}
+
+/*fim taxa*/
+/*rodape*/
+.rodape{
+    border-top:1px solid rgb(201, 201, 201);
+    padding:1rem;
+    height:70%;
+text-align: center
+
+}
+
+.rodape .row a{
+    text-decoration: none;
+    font-size:13px;
+    color:orange;
+}
+.rodape .row a:hover{
+    color:rgb(221, 167, 65)
+}
+.rodape .row span{
+    font-weight: bold;
+    font-size:13px;
+    color:rgb(224, 224, 224);
+}
+.rodape .row .col-3 .row .col-12 span{
+    color:rgb(255, 255, 255);
+}
+/*fim rodape*/
+
+        }
+        
+
+ 
