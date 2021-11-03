@@ -18,7 +18,15 @@ body::-webkit-scrollbar {
       margin:0;
       
   }
-
+.text-personaliz{
+    color:white;
+    text-align: center;
+    font-size:25px;
+}
+.texto-personalizado{
+    font-size:35px;
+    color:red;
+}
   /* FIM DA BARRA LATERAL */
 body, ul{
     margin:0px;
