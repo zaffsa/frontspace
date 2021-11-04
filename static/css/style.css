@@ -34,8 +34,8 @@ body, ul{
     overflow-x: hidden;
     
 }
-.container-fluid{
-    width:100vw;
+body{
+   
 background-color: #100120;
 }
 .menu-top a {
@@ -49,7 +49,7 @@ background-color: #100120;
     color:#F7C915;
 }
 .logo{
-    z-index: 1;
+    z-index: 10000;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -103,48 +103,31 @@ text-decoration: none;
    /*ENCERRA MENU */
 
 /*sobre*/
-.teste3{
-    border-bottom:3px solid #C863FC;
-    height:31.6em;  
-}
-.sobre{
-    height: 65em;
-    padding-top:15rem;
-   
-    justify-content: space-between;
 
-}
 
-.sobre .saiba-mais{
-    margin-top:14rem;
-
-    }
 .typing{
         border-right:10px solid rgba(255, 255, 255, 0.74);
         width:0;
         white-space: nowrap;
         overflow:hidden;
-        height:14px;
+        height:20px;
+        color:rgb(212, 27, 212);
+        font-size:25px;
       
+        font-family: 'Special Elite', cursive;
         animation: typing-cursor 500ms infinite , space-dat 4s steps(200) 1s normal both;
     
 }
 
-    .titulo-sobre h6{
-        color:#F7C915;
-        z-index:1000;
-        font-family: 'Special Elite', cursive;
-      
+.typing-border{
+    text-align: center;
 }
-    .titulo-sobre h1{
-        color:#C863FC;
-        z-index: 1000;
-        
-        text-align: left;
-
-      
-    }
-
+      .letters{
+          font-size:30px;
+          color:orange;
+          text-align: center;
+        }
+    
     .mensagem {
     color:rgb(155, 155, 155);
     text-align: justify;
@@ -457,391 +440,849 @@ color:orange;
 /*fim rodape*/
 /**/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**/
-@media (max-width:768px){
-       
-               .menu-top{ 
-                  /*  display:none;*/
-                  display: block;
-                    position: absolute;
-                    width:100%;
-                    top:70px;
-                    right:0px;
-                    height:0px;
-                    transition:.6s;
-                    background:#343a40;
-                    visibility: hidden;
-                    overflow-y: hidden;
-               z-index:1000px;
-                    }
-                    .menu-top a{
-                        margin:0 1rem;
-                        padding:.5rem;
-                    }
-        #nav.active .menu-top{
-            height:calc(100vh - 70px);
-            visibility: visible;
-            overflow-y: auto;
-         
-        
-        }
-        #btn-mobile-btn{
-            display:flex;
-          padding: .5rem 1rem;
-          font-size:1rem;
-          border:none;
-          color:white;
-          background:none;
-          cursor :pointer;
-           }
-           .hamburguer {
-               border-top:2px solid;
-               width:20px;
-           }
-           .hamburguer::after, .hamburguer::before{
-            content:'';
-            display:block;
-            width:20px;
-            height:2px;
-            background:white;
-            margin-top:5px;
-            position: relative;
-           }
-           #nav.active .hamburguer{
-            border-top-color: transparent;
+@media(max-width: 768px){
+   .container{
+       margin:0 auto;
+       width:100%;
+       display:block;
 
-           }
-           #nav.active .hamburguer::before{
-            transform: rotate(135deg);
+   }
 
-           }
-           #nav.active .hamburguer::after{
-            transform: rotate(-135deg);
-            top:-7px;
+    .menu-top{ 
+        /*  display:none;*/
+        display: block;
+          position: absolute;
+          width:100%;
+          top:0px;
+          right:0px;
+          height:0px;
+          transition:.6s;
+          background:#100120;
+          visibility: hidden;
+          overflow-y: hidden;
+     z-index:1000px;
+          }
+          .menu-top a{
+              margin:0 1rem;
+              display:block;
+              text-align: center;
+              padding:.5rem;
+              font-size:30px;
+          }
+#nav.active .menu-top{
+  height:100vh;
+  visibility: visible;
+  overflow-y: auto;
 
-           }
-           .menu-top li  ul{
-            position:absolute;
-            top:400px;
-            left:15;
-        
-            display:none;
-            }
-           .menu-top li:hover ul, .menu-top li.over ul{display:block;}
-           .menu-top li ul li{
-        
-            display:block;
-            width:70px;
-            }
-           /*MENU  ENCERRA AQUI*/
-    /*SOBRE*/
 
-           .sobre{
-            height: 100%;
-            
-            padding-top:3rem;
-            justify-content: space-between;
-        }
-     
-            .titulo-sobre h6{
-                color:rgb(212, 27, 212);
-            }
-            .titulo-sobre h1{
-                color:orange;
-                text-align: left;
-                
-            }
-        
-            .mensagem{
-        
-            color:white;
-            width:100%;
-            text-align: justify;
-            }
-            .saiba-mais{
-        
-            padding-top:10px;
-            
-            }
-            .sobre .saiba-mais{
-                margin-top:4rem;
-            margin-bottom: 3rem;;
-                }
-            .saiba-mais a  {
-        
-            border-radius: 10%;
-            
-            
-            padding:10px;
-            text-decoration: none;
-         
-                  
-              }
-            .saiba-mais a:hover{
-             background:white;
-             color:black;}
-         
-             .hidden-class{
-                 visibility: visible;
-             }
-             
+}
+#btn-mobile-btn{
+  display:flex;
+padding: .5rem 1rem;
+font-size:2rem;
+border:none;
+z-index:1000;
+color:white;
+
+background:none;
+cursor :pointer;
+ }
+ .hamburguer {
+     border-top:4px solid;
+     width:35px;
+     z-index:1000;
+ }
+ .hamburguer::after, .hamburguer::before{
+  content:'';
+  display:block;
+  width:35px;
+  height:4px;
+  background:white;
+  margin-top:5px;
+  z-index:1000;
+  position: relative;
+ }
+ #nav.active .hamburguer{
+    z-index:1000;
+  border-top-color: transparent;
+
+ }
+ #nav.active .hamburguer::before{
+    z-index:1000;
+  transform: rotate(135deg);
+
+ }
+ #nav.active .hamburguer::after{
+    z-index:1000;
+  transform: rotate(-135deg);
+  top:-8px;
+
+ }
+ .menu-top li  ul{
+  position:absolute;
+  top:32em;
+  left:22em;
+
+  display:none;
+  }
+ .menu-top li:hover ul, .menu-top li.over ul{display:block;}
+ .menu-top li ul li{
+
+  display:block;
+  width:70px;
+  }
+ /*MENU  ENCERRA AQUI*/
+/*SOBRE*/
+
+ .sobre{
+     text-align: center;
+  
+    height: 33.5em;
+    margin-top:15px;
+}
+
+
+.typing-border{
+    margin:0 auto;
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+  .typing{
+    color:rgb(212, 27, 212);
+    font-size:25px;
+    margin:0 auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .letters{
+      font-size:30px;
+      color:orange;
+      text-align: center;
+    }
+.margin-b{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+  .mensagem{
+  color:rgb(155, 155, 155);
+  width:100%;
+
+  text-align: center;
+  }
+
+
+  .saiba-mais a  {
+  border-radius: 10%;
+  margin-top:15px;
+  text-decoration: none;        
+    }
+
+  .saiba-mais a:hover{
+   background:white;
+   color:black;}
+
+   .hidden-class{
+       visibility: visible;
+   }
+   .sobre img{
+    margin-top:40px;
+    margin-right:3em;
+    width:450px;
+
+   }
 
 /*PRODUTOS*/
 .produtos{
-    
-  height: 10em;
-  margin: 0px;
-  /*  word-wrap: break-word;  */
-  }
-  .produtos .row{
-      justify-content: space-between;
-      margin-top:30px;
-      text-align:justify;     
-      margin:1rem;
-      
-  }
-  .link-produto{
-      padding:0px;
-      
-      
-  }
-  .produtos .link-produto a{
-      color:rgb(255, 255, 255);
-      text-decoration: none;
-      background:orange;
-      font-size:15px;
-     
-      border-radius:10px;
-      font-weight: bold;
-      
-      
-      
-  }
-  /*VISIBLE*/
-  
-  #token.active-hidden {
-      visibility: hidden;
-      
-  }
-  #gamedev.active-hidden {
-      visibility: hidden;
-  }
-  #blockchain.active-hidden{
-      visibility: hidden;
-  }
-  /*fim de visible*/
-  
-  .token-front{
-  
-      border-radius: 10px 0px 10px 0px;
-  
-      
-  }
-  
-  .token-front .-a{
-      background: none;
-      text-align: left;
-     
-  }
-  .token-front h3{
-      color:purple;
-  }
-  .token-front h5 {
-      color:purple;
-  }
-  .produtos  img{
-      width:250px;
-  }
-      .color-letras{
-          color:orange;
-      }
-      .blockchain{
-        position:fixed;
-        left:0px;
-        top:30px;
-        
-        border: 1px solid orange;
-        padding-top:30px;
-        width:100%;
-        color:rgb(255, 255, 255);
-        height:100vh;
-        
-        background-color: rgba(0, 0, 0, 0.897);
-       
-        
-       
-       }  
-       .gamedev{
-        position:fixed;
-        left:0px;
-        top:30px;
-        
-        border: 1px solid orange;
-        padding-top:30px;
-        width:100%;
-        color:rgb(255, 255, 255);
-        height:100vh;
-        
-        background-color: rgba(0, 0, 0, 0.897);
-       
-        
-         
-       }
-     
-     .token{
-        position:fixed;
-        left:0px;
-        top:30px;
-     
-        border: 1px solid orange;
-        padding-top:30px;
-        width:100%;
-        color:rgb(255, 255, 255);
-        height:100vh;
-        
-        background-color: rgba(0, 0, 0, 0.897);
-        animation: go-back .6 normal both;
-    }
-    @keyframes go-back{
-     from{
-         opacity:0;
-     }
-    to{
-        opacity: 1;
-    }
+
+height: 3em;
+margin: 0px;
+/*  word-wrap: break-word;  */
+}
+.link-produto{
+padding:0px;
+
+
+}
+.produtos .link-produto a{
+color:rgb(255, 255, 255);
+text-decoration: none;
+background:orange;
+font-size:15px;
+
+border-radius:10px;
+font-weight: bold;
+
+
+
+}
+/*VISIBLE*/
+
+#token.active-hidden {
+visibility: hidden;
+
+}
+#gamedev.active-hidden {
+visibility: hidden;
+}
+#blockchain.active-hidden{
+visibility: hidden;
+}
+/*fim de visible*/
+
+.token-front{
+
+border-radius: 10px 0px 10px 0px;
+
+
 }
 
-    .fechar-produto{
-        visibility:inherit;
-    }
-     .fechar {
-        
-         color:purple;
-         font-size:25px;
-         text-decoration:none;
-     }
-     .fechar2 {
-     
-        color:purple;
-        font-size:25px;
-        text-decoration:none;
-    }
-    .fechar3 {
-        
-    
-        color:purple;
-        font-size:25px;
-        text-decoration:none;
-    }
+.token-front .-a{
+background: none;
+text-align: left;
 
-    /*social*/
-     .projeto-social{
-        height:60em;
-        background:white;
-        }
-        .projeto-social img{
-            width:100px;
-        }
-        .projeto-social .row {
-        justify-content: space-between;
-        text-align: center;
-        padding:1rem;
-        }
-        .projeto-social .row .col-3 .col-12 a{
-            color:white;
-            text-decoration: none;
-            font-weight: 400;
-            border-radius:10px 0px 10px 0px;
-            background:black;
-            padding:5px;
-        }
+}
+.token-front h3{
+color:purple;
+}
+.token-front h5 {
+color:purple;
+}
+.produtos  img{
+width:250px;
+}
+.color-letras{
+color:orange;
+}
+.blockchain{
+position:fixed;
+left:0px;
+top:30px;
 
-        /*CHAMADA CADASTRO*/
-        .chamada-cadastro {
-            height:70%;
-           
-            text-align: center;
-            padding:1rem;
-        }
-        .chamada-cadastro h2{
-            color:orange;
-        }
-        .chamada-cadastro span{
-            font-size:15px;
-            font-weight: 400;
-            
-            color:purple;
-        }
-        .chamada-cadastro a{
-            color:black;
-            border-radius:10px 0px 10px 0px;
-            text-decoration: none;
-            font-size:20px;
-            padding:5px;
-            background-color: orange;
-        }
-        .chamada-cadastro .row .col-12{
-            margin-bottom: 3rem;
-        }
+border: 1px solid orange;
+padding-top:30px;
+width:100%;
+color:rgb(255, 255, 255);
+height:100vh;
+
+background-color: rgba(0, 0, 0, 0.897);
+
+
+
+}  
+.gamedev{
+position:fixed;
+left:0px;
+top:30px;
+
+border: 1px solid orange;
+padding-top:30px;
+width:100%;
+color:rgb(255, 255, 255);
+height:100vh;
+
+background-color: rgba(0, 0, 0, 0.897);
+
+
+
+}
+
+.token{
+position:fixed;
+left:0px;
+top:30px;
+
+border: 1px solid orange;
+padding-top:30px;
+width:100%;
+color:rgb(255, 255, 255);
+height:100vh;
+
+background-color: rgba(0, 0, 0, 0.897);
+animation: go-back .6 normal both;
+}
+@keyframes go-back{
+from{
+opacity:0;
+}
+to{
+opacity: 1;
+}
+}
+
+.fechar-produto{
+visibility:inherit;
+}
+.fechar {
+
+color:purple;
+font-size:25px;
+text-decoration:none;
+}
+.fechar2 {
+
+color:purple;
+font-size:25px;
+text-decoration:none;
+}
+.fechar3 {
+
+
+color:purple;
+font-size:25px;
+text-decoration:none;
+}
+
+/*social*/
+.projeto-social{
+height:60em;
+background:white;
+}
+.projeto-social img{
+  width:100px;
+}
+.projeto-social .row {
+justify-content: space-between;
+text-align: center;
+padding:1rem;
+}
+.projeto-social .row .col-3 .col-12 a{
+  color:white;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius:10px 0px 10px 0px;
+  background:black;
+  padding:5px;
+}
+
+/*CHAMADA CADASTRO*/
+.chamada-cadastro {
+  height:70%;
+ 
+  text-align: center;
+  padding:1rem;
+}
+.chamada-cadastro h2{
+  color:orange;
+}
+.chamada-cadastro span{
+  font-size:15px;
+  font-weight: 400;
+  
+  color:purple;
+}
+.chamada-cadastro a{
+  color:black;
+  border-radius:10px 0px 10px 0px;
+  text-decoration: none;
+  font-size:20px;
+  padding:5px;
+  background-color: orange;
+}
+.chamada-cadastro .row .col-12{
+  margin-bottom: 3rem;
+}
 
 /*fim call*/
 /* taxas*/
 .taxas {
-    height:50%;
+height:50%;
 }
 .taxas .row  {
-    padding-top:3rem;
+padding-top:3rem;
 }
 .taxas .taxasmenu {
-    margin-bottom:25px;
+margin-bottom:25px;
 }
 .taxas .row .col-6 .col-12 a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding:5px;
-    font-weight: 500;
-    background:rgb(255, 255, 255);
-    border:1px solid black;
-    border-radius: 0px 10px 10px 0px;
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding:5px;
+font-weight: 500;
+background:rgb(255, 255, 255);
+border:1px solid black;
+border-radius: 0px 10px 10px 0px;
 }
 .taxas .row .col-12 h2{
-    font-size:35px;
-    color:orange;
-    text-align: center;
+font-size:35px;
+color:orange;
+text-align: center;
 }
 .taxas .-taxas {
-  
-   
-    width:70%;
-    
- 
+
+
+width:70%;
+
+
 }
 
 /*fim taxa*/
 /*rodape*/
 .rodape{
-    border-top:1px solid rgb(201, 201, 201);
-    padding:1rem;
-    height:70%;
+border-top:1px solid rgb(201, 201, 201);
+padding:1rem;
+height:70%;
 text-align: center
 
 }
 
 .rodape .row a{
-    text-decoration: none;
-    font-size:13px;
-    color:orange;
+text-decoration: none;
+font-size:13px;
+color:orange;
 }
 .rodape .row a:hover{
-    color:rgb(221, 167, 65)
+color:rgb(221, 167, 65)
 }
 .rodape .row span{
-    font-weight: bold;
-    font-size:13px;
-    color:rgb(224, 224, 224);
+font-weight: bold;
+font-size:13px;
+color:rgb(224, 224, 224);
 }
 .rodape .row .col-3 .row .col-12 span{
-    color:rgb(255, 255, 255);
+color:rgb(255, 255, 255);
+}
+/*fim rodape*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:576px){
+       
+    .menu-top{ 
+        /*  display:none;*/
+        display: block;
+          position: absolute;
+          width:100%;
+          top:70px;
+          right:0px;
+          height:0px;
+          transition:.6s;
+          background:#343a40;
+          visibility: hidden;
+          overflow-y: hidden;
+     z-index:1000px;
+          }
+          .menu-top a{
+              margin:0 1rem;
+              padding:.5rem;
+          }
+#nav.active .menu-top{
+  height:calc(100vh - 70px);
+  visibility: visible;
+  overflow-y: auto;
+
+
+}
+#btn-mobile-btn{
+  display:flex;
+padding: .5rem 1rem;
+font-size:1rem;
+border:none;
+color:white;
+background:none;
+cursor :pointer;
+ }
+ .hamburguer {
+     border-top:2px solid;
+     width:20px;
+ }
+ .hamburguer::after, .hamburguer::before{
+  content:'';
+  display:block;
+  width:20px;
+  height:2px;
+  background:white;
+  margin-top:5px;
+  position: relative;
+ }
+ #nav.active .hamburguer{
+  border-top-color: transparent;
+
+ }
+ #nav.active .hamburguer::before{
+  transform: rotate(135deg);
+
+ }
+ #nav.active .hamburguer::after{
+  transform: rotate(-135deg);
+  top:-7px;
+
+ }
+ .menu-top li  ul{
+  position:absolute;
+  top:400px;
+  left:15;
+
+  display:none;
+  }
+ .menu-top li:hover ul, .menu-top li.over ul{display:block;}
+ .menu-top li ul li{
+
+  display:block;
+  width:70px;
+  }
+ /*MENU  ENCERRA AQUI*/
+/*SOBRE*/
+
+ .sobre{
+  height: 100%;
+  
+  padding-top:3rem;
+  justify-content: space-between;
+}
+
+  .titulo-sobre h6{
+
+      color:rgb(212, 27, 212);
+  }
+  .titulo-sobre h1{
+      color:orange;
+      text-align: left;
+     
+  }
+  .letters p{
+      font-size:500px;
+  }
+  .mensagem{
+
+  color:white;
+  width:100%;
+  text-align: justify;
+  }
+
+  .sobre .saiba-mais{
+      margin-top:4rem;
+  margin-bottom: 3rem;;
+      }
+  .saiba-mais a  {
+
+  border-radius: 10%;
+  
+  
+  padding:10px;
+  text-decoration: none;
+
+        
+    }
+  .saiba-mais a:hover{
+   background:white;
+   color:black;}
+
+   .hidden-class{
+       visibility: visible;
+   }
+   
+
+/*PRODUTOS*/
+.produtos{
+
+height: 10em;
+margin: 0px;
+/*  word-wrap: break-word;  */
+}
+.produtos .row{
+justify-content: space-between;
+margin-top:30px;
+text-align:justify;     
+margin:1rem;
+
+}
+.link-produto{
+padding:0px;
+
+
+}
+.produtos .link-produto a{
+color:rgb(255, 255, 255);
+text-decoration: none;
+background:orange;
+font-size:15px;
+
+border-radius:10px;
+font-weight: bold;
+
+
+
+}
+/*VISIBLE*/
+
+#token.active-hidden {
+visibility: hidden;
+
+}
+#gamedev.active-hidden {
+visibility: hidden;
+}
+#blockchain.active-hidden{
+visibility: hidden;
+}
+/*fim de visible*/
+
+.token-front{
+
+border-radius: 10px 0px 10px 0px;
+
+
+}
+
+.token-front .-a{
+background: none;
+text-align: left;
+
+}
+.token-front h3{
+color:purple;
+}
+.token-front h5 {
+color:purple;
+}
+.produtos  img{
+width:250px;
+}
+.color-letras{
+color:orange;
+}
+.blockchain{
+position:fixed;
+left:0px;
+top:30px;
+
+border: 1px solid orange;
+padding-top:30px;
+width:100%;
+color:rgb(255, 255, 255);
+height:100vh;
+
+background-color: rgba(0, 0, 0, 0.897);
+
+
+
+}  
+.gamedev{
+position:fixed;
+left:0px;
+top:30px;
+
+border: 1px solid orange;
+padding-top:30px;
+width:100%;
+color:rgb(255, 255, 255);
+height:100vh;
+
+background-color: rgba(0, 0, 0, 0.897);
+
+
+
+}
+
+.token{
+position:fixed;
+left:0px;
+top:30px;
+
+border: 1px solid orange;
+padding-top:30px;
+width:100%;
+color:rgb(255, 255, 255);
+height:100vh;
+
+background-color: rgba(0, 0, 0, 0.897);
+animation: go-back .6 normal both;
+}
+@keyframes go-back{
+from{
+opacity:0;
+}
+to{
+opacity: 1;
+}
+}
+
+.fechar-produto{
+visibility:inherit;
+}
+.fechar {
+
+color:purple;
+font-size:25px;
+text-decoration:none;
+}
+.fechar2 {
+
+color:purple;
+font-size:25px;
+text-decoration:none;
+}
+.fechar3 {
+
+
+color:purple;
+font-size:25px;
+text-decoration:none;
+}
+
+/*social*/
+.projeto-social{
+height:60em;
+background:white;
+}
+.projeto-social img{
+  width:100px;
+}
+.projeto-social .row {
+justify-content: space-between;
+text-align: center;
+padding:1rem;
+}
+.projeto-social .row .col-3 .col-12 a{
+  color:white;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius:10px 0px 10px 0px;
+  background:black;
+  padding:5px;
+}
+
+/*CHAMADA CADASTRO*/
+.chamada-cadastro {
+  height:70%;
+ 
+  text-align: center;
+  padding:1rem;
+}
+.chamada-cadastro h2{
+  color:orange;
+}
+.chamada-cadastro span{
+  font-size:15px;
+  font-weight: 400;
+  
+  color:purple;
+}
+.chamada-cadastro a{
+  color:black;
+  border-radius:10px 0px 10px 0px;
+  text-decoration: none;
+  font-size:20px;
+  padding:5px;
+  background-color: orange;
+}
+.chamada-cadastro .row .col-12{
+  margin-bottom: 3rem;
+}
+
+/*fim call*/
+/* taxas*/
+.taxas {
+height:50%;
+}
+.taxas .row  {
+padding-top:3rem;
+}
+.taxas .taxasmenu {
+margin-bottom:25px;
+}
+.taxas .row .col-6 .col-12 a{
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding:5px;
+font-weight: 500;
+background:rgb(255, 255, 255);
+border:1px solid black;
+border-radius: 0px 10px 10px 0px;
+}
+.taxas .row .col-12 h2{
+font-size:35px;
+color:orange;
+text-align: center;
+}
+.taxas .-taxas {
+
+
+width:70%;
+
+
+}
+
+/*fim taxa*/
+/*rodape*/
+.rodape{
+border-top:1px solid rgb(201, 201, 201);
+padding:1rem;
+height:70%;
+text-align: center
+
+}
+
+.rodape .row a{
+text-decoration: none;
+font-size:13px;
+color:orange;
+}
+.rodape .row a:hover{
+color:rgb(221, 167, 65)
+}
+.rodape .row span{
+font-weight: bold;
+font-size:13px;
+color:rgb(224, 224, 224);
+}
+.rodape .row .col-3 .row .col-12 span{
+color:rgb(255, 255, 255);
 }
 /*fim rodape*/
 

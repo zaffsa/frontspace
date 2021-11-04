@@ -45,7 +45,7 @@ const addClasseG = document.querySelector('#game-btn').addEventListener('click',
     btn_chain.classList.remove('produtos-btn')
 })
 const width = screen.width
-if (width > 576)
+if (width > 1024)
     token.classList.remove('active-hidden')
 
 
